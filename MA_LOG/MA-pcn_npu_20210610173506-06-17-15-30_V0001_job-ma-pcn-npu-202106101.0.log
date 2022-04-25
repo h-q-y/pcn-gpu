@@ -1,0 +1,46 @@
+do nothing
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-06-17 15:32:15,894 - WARNING - stdout log /var/log/batch-task/job0520f6ed/job-ma-pcn-npu-202106101/stdout.log is not found
+[Modelarts Service Log]2021-06-17 15:32:15,903 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-06-17 15:32:15,903 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-06-17 15:32:15,904 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-npu-202106101",
+            "server_id": "192.168.0.231",
+            "device": [
+                {
+                    "device_id": "1",
+                    "device_ip": "192.2.208.175",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-17 15:32:15,905 - INFO - Rank table file (C7x) is generated
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 34, in <module>
+    from data_util import lmdb_dataflow, get_queued_data
+  File "/cache/user-job-dir/code/data_util.py", line 29, in <module>
+    from tensorpack import dataflow
+ModuleNotFoundError: No module named 'tensorpack'
+[Modelarts Service Log]2021-06-17 15:32:21,927 - ERROR - proc-rank-0-device-0 (pid: 115) has exited with non-zero code: 1
+[Modelarts Service Log]2021-06-17 15:32:21,928 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-06-17 15:32:21,928 - INFO - proc-rank-0-device-0 (pid: 115) has exited
+[Modelarts Service Log]2021-06-17 15:32:21,928 - INFO - End destroy training processes
+[ModelArts Service Log]modelarts-pipe: total length: 3843
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/ at 2021-06-17-15:32:22
+upload_tail_log.py -l 2048 -o s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/
+[Modelarts Service Log]Training end at 2021-06-17-15:32:22
+[Modelarts Service Log]Training completed.

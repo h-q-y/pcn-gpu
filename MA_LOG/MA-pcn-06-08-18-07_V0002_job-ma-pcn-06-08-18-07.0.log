@@ -1,0 +1,114 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn-06-08-18-07/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn-06-08-18-07.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/ --train_url=s3://pcn/MA-pcn-06-08-18-07/output/V0002/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-06-10-16:19:56
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn-06-08-18-07.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/06/10 16:19:57]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-06-10 16:19:58,262 - modelarts-downloader.py[line:620] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://pcn/MA-pcn-06-08-18-07/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn-06-08-18-07.log
+/home/work/user-job-dir
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn-06-08-18-07.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn-06-08-18-07.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn-06-08-18-07.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-06-10 16:20:05,038 - WARNING - stdout log /var/log/batch-task/job5f814058/job-ma-pcn-06-08-18-07/stdout.log is not found
+[Modelarts Service Log]2021-06-10 16:20:05,047 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-06-10 16:20:05,048 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-06-10 16:20:05,048 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-06-10 16:20:05,048 - INFO - Davinci training command
+[Modelarts Service Log]2021-06-10 16:20:05,048 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://pcn/pcn_dataset/', '--train_url=s3://pcn/MA-pcn-06-08-18-07/output/V0002/']
+[Modelarts Service Log]2021-06-10 16:20:05,048 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-06-10 16:20:05,049 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-06-10 16:20:05,049 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-06-08-18-07",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job5f814058-job-ma-pcn-06-08-18-07-0",
+                    "server_id": "192.168.0.78",
+                    "devices": [
+                        {
+                            "device_id": "0",
+                            "device_ip": "192.1.224.177"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-10 16:20:05,049 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-06-10 16:20:05,049 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.78",
+            "device": [
+                {
+                    "device_id": "0",
+                    "device_ip": "192.1.224.177",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-10 16:20:05,050 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-06-10 16:20:05,050 - INFO - Current server
+[Modelarts Service Log]2021-06-10 16:20:05,050 - INFO - 
+{
+    "server_id": "192.168.0.78",
+    "device": [
+        {
+            "device_id": "0",
+            "device_ip": "192.1.224.177",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-10 16:20:05,051 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-06-10 16:20:05,059 - INFO - proc-rank-0-device-0 (pid: 115)
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 33, in <module>
+    from data_util import lmdb_dataflow, get_queued_data
+ModuleNotFoundError: No module named 'data_util'
+[Modelarts Service Log]2021-06-10 16:20:09,067 - ERROR - proc-rank-0-device-0 (pid: 115) has exited with non-zero code: 1
+[Modelarts Service Log]2021-06-10 16:20:09,067 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-06-10 16:20:09,067 - INFO - proc-rank-0-device-0 (pid: 115) has exited
+[Modelarts Service Log]2021-06-10 16:20:09,067 - INFO - End destroy training processes
+[ModelArts Service Log]modelarts-pipe: total length: 3477
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://pcn/MA-pcn-06-08-18-07/log/ascend-log/ at 2021-06-10-16:20:09
+upload_tail_log.py -l 2048 -o s3://pcn/MA-pcn-06-08-18-07/log/ascend-log/
+INFO:root:No files to copy.
+[Modelarts Service Log]upload ascend-log end at 2021-06-10-16:20:09
+[Modelarts Service Log]Training end at 2021-06-10-16:20:09
+[Modelarts Service Log]Training completed.

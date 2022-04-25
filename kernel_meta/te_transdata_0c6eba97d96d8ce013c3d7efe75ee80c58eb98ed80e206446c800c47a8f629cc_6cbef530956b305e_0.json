@@ -1,0 +1,13 @@
+{
+    "binFileName":"te_transdata_0c6eba97d96d8ce013c3d7efe75ee80c58eb98ed80e206446c800c47a8f629cc_6cbef530956b305e_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_transdata_0c6eba97d96d8ce013c3d7efe75ee80c58eb98ed80e206446c800c47a8f629cc_6cbef530956b305e_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"26e97f1de882d0ff512eb9e51942ff712a15829015963c1747da270cffb8faf5"
+}

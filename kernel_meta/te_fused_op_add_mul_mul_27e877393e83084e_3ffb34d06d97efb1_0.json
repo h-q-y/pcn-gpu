@@ -1,0 +1,18 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"te_fused_op_add_mul_mul_27e877393e83084e_3ffb34d06d97efb1_0",
+    "binFileSuffix":".o",
+    "blockDim":1,
+    "kernelName":"te_fused_op_add_mul_mul_27e877393e83084e_3ffb34d06d97efb1_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"c27585deed8a48393687f13e22be43d0cdc7eb5a5452f2334e763f2765c2b447"
+}

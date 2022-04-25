@@ -1,0 +1,21 @@
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn-06-08-18-07/code/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-06-10-15:17:22
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn-06-08-18-07.log
+[Modelarts Service Log]handle inputs of training job
+/home/work/user-job-dir
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn-06-08-18-07.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn-06-08-18-07.log
+[Modelarts Service Log]2021-06-10 15:17:27,890 - WARNING - stdout log /var/log/batch-task/joba7475f76/job-ma-pcn-06-08-18-07/stdout.log is not found
+[Modelarts Service Log]2021-06-10 15:17:27,900 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-06-10 15:17:27,900 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-06-10 15:17:27,900 - INFO - Davinci training command
+[Modelarts Service Log]2021-06-10 15:17:27,902 - INFO - Current server
+[Modelarts Service Log]2021-06-10 15:17:27,910 - INFO - proc-rank-0-device-0 (pid: 115)
+INFO:root:No files to copy.
+[Modelarts Service Log]upload ascend-log end at 2021-06-10-15:17:32
+[Modelarts Service Log]Training end at 2021-06-10-15:17:32
+[Modelarts Service Log]Training completed.

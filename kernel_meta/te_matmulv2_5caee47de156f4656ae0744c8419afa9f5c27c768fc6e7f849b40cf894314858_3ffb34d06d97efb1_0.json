@@ -1,0 +1,14 @@
+{
+    "binFileName":"te_matmulv2_5caee47de156f4656ae0744c8419afa9f5c27c768fc6e7f849b40cf894314858_3ffb34d06d97efb1_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_matmulv2_5caee47de156f4656ae0744c8419afa9f5c27c768fc6e7f849b40cf894314858_3ffb34d06d97efb1_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"fe7965ef19979e0ca24634ec12bc5489bac47760e11cb770a3e251460418fb26"
+}

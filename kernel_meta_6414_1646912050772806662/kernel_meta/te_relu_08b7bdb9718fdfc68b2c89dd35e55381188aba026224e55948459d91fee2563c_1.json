@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "batchBindOnly":1,
+    "binFileName":"te_relu_08b7bdb9718fdfc68b2c89dd35e55381188aba026224e55948459d91fee2563c_1",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_relu_08b7bdb9718fdfc68b2c89dd35e55381188aba026224e55948459d91fee2563c_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"8037c1ac97b9da014b672ef95b8401d4019e7699a5ae4942b70123268cbda186"
+}

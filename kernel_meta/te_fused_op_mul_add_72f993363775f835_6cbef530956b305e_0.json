@@ -1,0 +1,15 @@
+{
+    "binFileName":"te_fused_op_mul_add_72f993363775f835_6cbef530956b305e_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_fused_op_mul_add_72f993363775f835_6cbef530956b305e_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"0c0ec5a2baa62c37b2ac8832f6ec4ca9a1294978524a35385895ccb5589a4df9"
+}

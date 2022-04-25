@@ -1,0 +1,13 @@
+{
+    "binFileName":"te_sliced_65e7e7511e31405ce6464c4c1485445cf0c7200de7b708c88c66764fb0982f13_190ce30533abc34b_0",
+    "binFileSuffix":".o",
+    "blockDim":4,
+    "kernelName":"te_sliced_65e7e7511e31405ce6464c4c1485445cf0c7200de7b708c88c66764fb0982f13_190ce30533abc34b_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"e379af508ed3c5d1a29f8d57508d3ffa8bf849fd7802ddfe03366be2539c74e1"
+}

@@ -1,0 +1,13 @@
+{
+    "binFileName":"te_tiled_80a32d89c375207bfd7354de12be8a74cbf74fc220549866cdecf8cec91b76ff_fdc50d6fded14bce_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_tiled_80a32d89c375207bfd7354de12be8a74cbf74fc220549866cdecf8cec91b76ff_fdc50d6fded14bce_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"5fd150eba14dc420ae103bcfbc67e5c3ff9eb345cf610f0dca5054dae45d42e6"
+}

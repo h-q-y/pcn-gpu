@@ -1,0 +1,14 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"te_cast_9c3adbc34bc93d99e6041a065f44d087f2db8c0dd5e6d83281335c1414310e30_6c6ec3cc418e1567_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_cast_9c3adbc34bc93d99e6041a065f44d087f2db8c0dd5e6d83281335c1414310e30_6c6ec3cc418e1567_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"f84038b9feddfb2ee7a3291b308c507f499f505b22849174c26db00ec46f397d"
+}

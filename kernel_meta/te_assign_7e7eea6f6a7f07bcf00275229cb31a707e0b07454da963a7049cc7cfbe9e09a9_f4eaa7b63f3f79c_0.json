@@ -1,0 +1,14 @@
+{
+    "binFileName":"te_assign_7e7eea6f6a7f07bcf00275229cb31a707e0b07454da963a7049cc7cfbe9e09a9_f4eaa7b63f3f79c_0",
+    "binFileSuffix":".o",
+    "blockDim":1,
+    "kernelName":"te_assign_7e7eea6f6a7f07bcf00275229cb31a707e0b07454da963a7049cc7cfbe9e09a9_f4eaa7b63f3f79c_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"67bc8b701530491159f387ce41b33988d9eee1b8d20e22ff229e67386fa2ce0b"
+}

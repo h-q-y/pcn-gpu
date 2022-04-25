@@ -1,0 +1,15 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"te_sqrtgrad_63d32b8dcfa6f8e579ffa6e0933cd3b74952e96ed68b8ef5d2ebe532e224e0a4_fdc50d6fded14bce_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_sqrtgrad_63d32b8dcfa6f8e579ffa6e0933cd3b74952e96ed68b8ef5d2ebe532e224e0a4_fdc50d6fded14bce_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"c0c790ff4ec4bf8595ccbf70272e64d6fca58be142ab27c0779500ff6c864cbe"
+}

@@ -1,0 +1,148 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/pcn/ --train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0014/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-06-17-19:03:23
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]handle inputs of training job
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-06-17 19:03:27,118 - WARNING - stdout log /var/log/batch-task/job3eea5db8/job-ma-pcn-npu-202106101/stdout.log is not found
+[Modelarts Service Log]2021-06-17 19:03:27,127 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-06-17 19:03:27,127 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-06-17 19:03:27,127 - INFO - Davinci training command
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-npu-202106101",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job3eea5db8-job-ma-pcn-npu-202106101-0",
+                    "server_id": "192.168.0.220",
+                    "devices": [
+                        {
+                            "device_id": "2",
+                            "device_ip": "192.3.15.159"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-17 19:03:27,128 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-06-17 19:03:27,128 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.220",
+            "device": [
+                {
+                    "device_id": "2",
+                    "device_ip": "192.3.15.159",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-17 19:03:27,129 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-06-17 19:03:27,129 - INFO - Current server
+[Modelarts Service Log]2021-06-17 19:03:27,129 - INFO - 
+{
+    "server_id": "192.168.0.220",
+    "device": [
+        {
+            "device_id": "2",
+            "device_ip": "192.3.15.159",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-06-17 19:03:27,130 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-06-17 19:03:27,138 - INFO - proc-rank-0-device-0 (pid: 115)
+Uninstalling enum34-1.1.10:
+  Successfully uninstalled enum34-1.1.10
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting tensorpack
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/f9/8c/63e5f5a4a04dea36b75850f9daa885ccbfad64bec1fae0ee4ca9f31b3eaa/tensorpack-0.11-py2.py3-none-any.whl (296kB)
+Requirement already satisfied: numpy>=1.14 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.17.5)
+Requirement already satisfied: termcolor>=1.1 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.1.0)
+Collecting pyzmq>=16 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/a3/7a/561526861908d366ddc2764933a6090078654b0f2ff20c3c180dd5851554/pyzmq-22.0.3.tar.gz (1.2MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting msgpack-numpy>=0.4.4.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/19/05/05b8d7c69c6abb36a34325cc3150089bdafc359f0a81fb998d93c5d5c737/msgpack_numpy-0.4.7.1-py2.py3-none-any.whl
+Requirement already satisfied: tqdm>4.29.0 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (4.46.1)
+Collecting msgpack>=0.5.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/59/04/87fc6708659c2ed3b0b6d4954f270b6e931def707b227c4554f99bd5401e/msgpack-1.0.2.tar.gz (123kB)
+Requirement already satisfied: psutil>=5 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (5.7.0)
+Requirement already satisfied: six in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.15.0)
+Collecting tabulate>=0.7.7 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ca/80/7c0cad11bd99985cfe7c09427ee0b4f9bd6b048bd13d4ffb32c6db237dfb/tabulate-0.8.9-py3-none-any.whl
+Building wheels for collected packages: pyzmq
+  Building wheel for pyzmq (PEP 517): started
+  Building wheel for pyzmq (PEP 517): still running...
+  Building wheel for pyzmq (PEP 517): still running...
+  Building wheel for pyzmq (PEP 517): finished with status 'done'
+  Created wheel for pyzmq: filename=pyzmq-22.0.3-cp37-cp37m-linux_aarch64.whl size=6031760 sha256=e94eb0f5485b4d2b99f9a5dc9fb150a4a4d648946fedce8785d3c906f3fb094b
+  Stored in directory: /home/work/.cache/pip/wheels/b4/9f/a7/5b8a3feaa4f90246408e8a7e3e94b7a7167654a784c4f4a6f4
+Successfully built pyzmq
+Building wheels for collected packages: msgpack
+  Building wheel for msgpack (setup.py): started
+  Building wheel for msgpack (setup.py): finished with status 'done'
+  Created wheel for msgpack: filename=msgpack-1.0.2-cp37-cp37m-linux_aarch64.whl size=224423 sha256=0effeaee7d84ea439215f6f64fd8a58e992e598deae45ad59c5dbab1089ab6db
+  Stored in directory: /home/work/.cache/pip/wheels/67/89/99/8886acf4cf40672c2fe8fa2c63661973741a3b9f3d117a6fa9
+Successfully built msgpack
+Installing collected packages: pyzmq, msgpack, msgpack-numpy, tabulate, tensorpack
+Successfully installed msgpack-1.0.2 msgpack-numpy-0.4.7.1 pyzmq-22.0.3 tabulate-0.8.9 tensorpack-0.11
+WARNING:tensorflow:From /usr/local/Ascend/tfplugin/latest/tfplugin/python/site-packages/npu_bridge/estimator/npu/npu_optimizer.py:225: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 37, in <module>
+    from tf_util import add_train_summary
+  File "/cache/user-job-dir/code/tf_util.py", line 27, in <module>
+    from pc_distance import tf_nndistance, tf_approxmatch
+  File "/cache/user-job-dir/code/pc_distance/tf_nndistance.py", line 7, in <module>
+    nn_distance_module=tf.load_op_library(os.path.join(BASE_DIR, 'pc_distance/tf_nndistance_so.so'))#os.path.join(BASE_DIR, 'tf_nndistance_so.so'))
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/tensorflow_core/python/framework/load_library.py", line 61, in load_op_library
+    lib_handle = py_tf.TF_LoadLibrary(library_filename)
+tensorflow.python.framework.errors_impl.NotFoundError: /cache/user-job-dir/code/pc_distance/tf_nndistance_so.so: cannot open shared object file: No such file or directory
+[Modelarts Service Log]2021-06-17 19:06:01,297 - ERROR - proc-rank-0-device-0 (pid: 115) has exited with non-zero code: 1
+[Modelarts Service Log]2021-06-17 19:06:01,297 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-06-17 19:06:01,297 - INFO - proc-rank-0-device-0 (pid: 115) has exited
+[Modelarts Service Log]2021-06-17 19:06:01,297 - INFO - End destroy training processes
+[ModelArts Service Log]modelarts-pipe: total length: 7852
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/ at 2021-06-17-19:06:01
+upload_tail_log.py -l 2048 -o s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/
+[Modelarts Service Log]upload ascend-log end at 2021-06-17-19:06:03
+[Modelarts Service Log]Training end at 2021-06-17-19:06:03
+[Modelarts Service Log]Training completed.

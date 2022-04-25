@@ -1,0 +1,17 @@
+{
+    "binFileName":"te_stridedslicegrad_8d2ea99bfebc1114b910bd46cc4e0b0b1f66249f969a43c02afe5e1e69104590_3ffb34d06d97efb1_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_stridedslicegrad_8d2ea99bfebc1114b910bd46cc4e0b0b1f66249f969a43c02afe5e1e69104590_3ffb34d06d97efb1_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":224,
+    "parameters":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+    ],
+    "sha256":"e6f3cd1d2aa8db34776b775dcc2240f447e95f5af14a7150c947d1a575a479fd"
+}

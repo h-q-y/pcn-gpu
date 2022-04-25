@@ -1,0 +1,147 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/pcn/ --train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0048/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-07-17-23:29:35
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/07/17 23:29:35]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-07-17 23:29:36,516 - modelarts-downloader.py[line:620] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-07-17 23:29:38,284 - WARNING - stdout log /var/log/batch-task/job2c25f530/job-ma-pcn-npu-202106101/stdout.log is not found
+[Modelarts Service Log]2021-07-17 23:29:38,293 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-07-17 23:29:38,293 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - Davinci training command
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://pcn/pcn_dataset/pcn/', '--train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0048/']
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-07-17 23:29:38,294 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-npu-202106101",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job2c25f530-job-ma-pcn-npu-202106101-0",
+                    "server_id": "192.168.0.136",
+                    "devices": [
+                        {
+                            "device_id": "3",
+                            "device_ip": "192.4.163.159"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-17 23:29:38,295 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-07-17 23:29:38,295 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.136",
+            "device": [
+                {
+                    "device_id": "3",
+                    "device_ip": "192.4.163.159",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-17 23:29:38,295 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-07-17 23:29:38,296 - INFO - Current server
+[Modelarts Service Log]2021-07-17 23:29:38,296 - INFO - 
+{
+    "server_id": "192.168.0.136",
+    "device": [
+        {
+            "device_id": "3",
+            "device_ip": "192.4.163.159",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-17 23:29:38,296 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-07-17 23:29:38,305 - INFO - proc-rank-0-device-0 (pid: 115)
+Uninstalling enum34-1.1.10:
+  Successfully uninstalled enum34-1.1.10
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting lmdb==0.97
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/9f/8f/37cc080deb867305bf2d3ec4639e33b981d0def8d78949454a4654ca16bf/lmdb-0.97.tar.gz (869kB)
+Building wheels for collected packages: lmdb
+  Building wheel for lmdb (setup.py): started
+  Building wheel for lmdb (setup.py): finished with status 'done'
+  Created wheel for lmdb: filename=lmdb-0.97-cp37-cp37m-linux_aarch64.whl size=270195 sha256=7d95398daeffa1b376867402d46609faffb5ec41df9249ce20a3bc6d0fc624aa
+  Stored in directory: /home/work/.cache/pip/wheels/9a/ce/6a/f9fda9565e0fa6a5e96a4c312a6171baf87b91bba0401846c4
+Successfully built lmdb
+Installing collected packages: lmdb
+Successfully installed lmdb-0.97
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting pyarrow
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0xffff987e5090>, 'Connection to pypi.tuna.tsinghua.edu.cn timed out. (connect timeout=15)')': /simple/pyarrow/
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0xffff987e73d0>, 'Connection to pypi.tuna.tsinghua.edu.cn timed out. (connect timeout=15)')': /simple/pyarrow/
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0xffff987e7210>, 'Connection to pypi.tuna.tsinghua.edu.cn timed out. (connect timeout=15)')': /simple/pyarrow/
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0xffff987e7c10>, 'Connection to pypi.tuna.tsinghua.edu.cn timed out. (connect timeout=15)')': /simple/pyarrow/
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0xffff987e7390>, 'Connection to pypi.tuna.tsinghua.edu.cn timed out. (connect timeout=15)')': /simple/pyarrow/
+  ERROR: Could not find a version that satisfies the requirement pyarrow (from versions: none)
+ERROR: No matching distribution found for pyarrow
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting tensorpack
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/f9/8c/63e5f5a4a04dea36b75850f9daa885ccbfad64bec1fae0ee4ca9f31b3eaa/tensorpack-0.11-py2.py3-none-any.whl (296kB)
+Requirement already satisfied: psutil>=5 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (5.7.0)
+Collecting msgpack>=0.5.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/59/04/87fc6708659c2ed3b0b6d4954f270b6e931def707b227c4554f99bd5401e/msgpack-1.0.2.tar.gz (123kB)
+Collecting pyzmq>=16 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/a3/7a/561526861908d366ddc2764933a6090078654b0f2ff20c3c180dd5851554/pyzmq-22.0.3.tar.gz (1.2MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting tabulate>=0.7.7 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ca/80/7c0cad11bd99985cfe7c09427ee0b4f9bd6b048bd13d4ffb32c6db237dfb/tabulate-0.8.9-py3-none-any.whl
+Requirement already satisfied: termcolor>=1.1 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.1.0)
+Requirement already satisfied: numpy>=1.14 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.17.5)
+Requirement already satisfied: tqdm>4.29.0 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (4.46.1)
+Requirement already satisfied: six in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.15.0)
+Collecting msgpack-numpy>=0.4.4.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/19/05/05b8d7c69c6abb36a34325cc3150089bdafc359f0a81fb998d93c5d5c737/msgpack_numpy-0.4.7.1-py2.py3-none-any.whl
+Building wheels for collected packages: pyzmq
+  Building wheel for pyzmq (PEP 517): started
+  Building wheel for pyzmq (PEP 517): still running...

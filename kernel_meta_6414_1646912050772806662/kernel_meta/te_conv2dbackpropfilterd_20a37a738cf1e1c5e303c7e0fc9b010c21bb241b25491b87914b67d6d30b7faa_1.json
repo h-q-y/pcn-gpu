@@ -1,0 +1,15 @@
+{
+    "KBHit":false,
+    "binFileName":"te_conv2dbackpropfilterd_20a37a738cf1e1c5e303c7e0fc9b010c21bb241b25491b87914b67d6d30b7faa_1",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_conv2dbackpropfilterd_20a37a738cf1e1c5e303c7e0fc9b010c21bb241b25491b87914b67d6d30b7faa_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        1
+    ],
+    "sha256":"b1b69521334dda9608aa4cd4e881e79f782c282bd066eff7b7acd23fc5ecc68c"
+}

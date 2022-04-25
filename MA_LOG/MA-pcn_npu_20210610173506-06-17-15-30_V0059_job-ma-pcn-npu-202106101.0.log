@@ -1,0 +1,27 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/pcn/ --train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0059/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-07-18-10:49:28
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/07/18 10:49:28]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-07-18 10:49:29,561 - modelarts-downloader.py[line:620] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[Modelarts Service Log][INFO] exec pip install
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting pyarrow==0.10.0 (from -r /home/work/user-job-dir/code/pip-requirements.txt (line 1))
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/c0/a0/f7e9dfd8988d94f4952f9b50eb04e14a80fbe39218520725aab53daab57c/pyarrow-0.10.0.tar.gz (2.1MB)

@@ -1,0 +1,15 @@
+{
+    "batchBindOnly":1,
+    "binFileName":"te_relugrad_461ff81ec694a1a8a852fa9d9e2f838c4bb85c537db32a170f90bf0337f56ff4_6c6ec3cc418e1567_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_relugrad_461ff81ec694a1a8a852fa9d9e2f838c4bb85c537db32a170f90bf0337f56ff4_6c6ec3cc418e1567_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"c962762d4b4e1988dd5de8301fd013eac533fc7b29f740cb332a77fa93d0db21"
+}

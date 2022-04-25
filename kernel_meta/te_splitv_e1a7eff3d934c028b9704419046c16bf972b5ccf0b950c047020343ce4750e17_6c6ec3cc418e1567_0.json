@@ -1,0 +1,31 @@
+{
+    "binFileName":"te_splitv_e1a7eff3d934c028b9704419046c16bf972b5ccf0b950c047020343ce4750e17_6c6ec3cc418e1567_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_splitv_e1a7eff3d934c028b9704419046c16bf972b5ccf0b950c047020343ce4750e17_6c6ec3cc418e1567_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":192,
+    "parameters":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"d4df75697212550c43086362089a7887174e7c5d9a0781fadc24e486cbe2cad5"
+}

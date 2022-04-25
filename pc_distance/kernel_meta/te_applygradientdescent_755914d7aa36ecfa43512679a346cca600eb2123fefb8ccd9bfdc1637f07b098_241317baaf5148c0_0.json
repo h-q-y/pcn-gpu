@@ -1,0 +1,15 @@
+{
+    "binFileName":"te_applygradientdescent_755914d7aa36ecfa43512679a346cca600eb2123fefb8ccd9bfdc1637f07b098_241317baaf5148c0_0",
+    "binFileSuffix":".o",
+    "blockDim":25,
+    "kernelName":"te_applygradientdescent_755914d7aa36ecfa43512679a346cca600eb2123fefb8ccd9bfdc1637f07b098_241317baaf5148c0_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"5f6365fa581d2ceeb12ecdca70f3abeaa8d404f47215b7fa4e6f3442c49686a7"
+}

@@ -1,0 +1,194 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/pcn/ --train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0026/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-07-14-21:53:05
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/07/14 21:53:06]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-07-14 21:53:06,973 - modelarts-downloader.py[line:620] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-07-14 21:53:08,323 - WARNING - stdout log /var/log/batch-task/job30aee9b7/job-ma-pcn-npu-202106101/stdout.log is not found
+[Modelarts Service Log]2021-07-14 21:53:08,331 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - Davinci training command
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://pcn/pcn_dataset/pcn/', '--train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0026/']
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-07-14 21:53:08,332 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-npu-202106101",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job30aee9b7-job-ma-pcn-npu-202106101-0",
+                    "server_id": "192.168.0.136",
+                    "devices": [
+                        {
+                            "device_id": "6",
+                            "device_ip": "192.3.179.125"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 21:53:08,333 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-07-14 21:53:08,333 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.136",
+            "device": [
+                {
+                    "device_id": "6",
+                    "device_ip": "192.3.179.125",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 21:53:08,333 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-07-14 21:53:08,334 - INFO - Current server
+[Modelarts Service Log]2021-07-14 21:53:08,334 - INFO - 
+{
+    "server_id": "192.168.0.136",
+    "device": [
+        {
+            "device_id": "6",
+            "device_ip": "192.3.179.125",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 21:53:08,335 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-07-14 21:53:08,343 - INFO - proc-rank-0-device-0 (pid: 115)
+Uninstalling enum34-1.1.10:
+  Successfully uninstalled enum34-1.1.10
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting tensorpack
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/f9/8c/63e5f5a4a04dea36b75850f9daa885ccbfad64bec1fae0ee4ca9f31b3eaa/tensorpack-0.11-py2.py3-none-any.whl (296kB)
+Collecting msgpack>=0.5.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/59/04/87fc6708659c2ed3b0b6d4954f270b6e931def707b227c4554f99bd5401e/msgpack-1.0.2.tar.gz (123kB)
+Collecting msgpack-numpy>=0.4.4.2 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/19/05/05b8d7c69c6abb36a34325cc3150089bdafc359f0a81fb998d93c5d5c737/msgpack_numpy-0.4.7.1-py2.py3-none-any.whl
+Requirement already satisfied: six in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.15.0)
+Requirement already satisfied: numpy>=1.14 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.17.5)
+Requirement already satisfied: psutil>=5 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (5.7.0)
+Requirement already satisfied: tqdm>4.29.0 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (4.46.1)
+Requirement already satisfied: termcolor>=1.1 in /usr/local/ma/python3.7/lib/python3.7/site-packages (from tensorpack) (1.1.0)
+Collecting pyzmq>=16 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/a3/7a/561526861908d366ddc2764933a6090078654b0f2ff20c3c180dd5851554/pyzmq-22.0.3.tar.gz (1.2MB)
+  Installing build dependencies: started
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting tabulate>=0.7.7 (from tensorpack)
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ca/80/7c0cad11bd99985cfe7c09427ee0b4f9bd6b048bd13d4ffb32c6db237dfb/tabulate-0.8.9-py3-none-any.whl
+Building wheels for collected packages: pyzmq
+  Building wheel for pyzmq (PEP 517): started
+  Building wheel for pyzmq (PEP 517): still running...
+  Building wheel for pyzmq (PEP 517): finished with status 'done'
+  Created wheel for pyzmq: filename=pyzmq-22.0.3-cp37-cp37m-linux_aarch64.whl size=6046109 sha256=56dba1b57b5a95ce2ea5f22f2abcbea213c9e8fa91aeb1181071381ab9c2502b
+  Stored in directory: /home/work/.cache/pip/wheels/b4/9f/a7/5b8a3feaa4f90246408e8a7e3e94b7a7167654a784c4f4a6f4
+Successfully built pyzmq
+Building wheels for collected packages: msgpack
+  Building wheel for msgpack (setup.py): started
+  Created wheel for msgpack: filename=msgpack-1.0.2-cp37-cp37m-linux_aarch64.whl size=224434 sha256=8ecd8a1d73e6711b7ee58c55a978167d018b4ea53a3b156d403818ec34a09637
+  Stored in directory: /home/work/.cache/pip/wheels/67/89/99/8886acf4cf40672c2fe8fa2c63661973741a3b9f3d117a6fa9
+Successfully built msgpack
+Installing collected packages: msgpack, msgpack-numpy, pyzmq, tabulate, tensorpack
+Successfully installed msgpack-1.0.2 msgpack-numpy-0.4.7.1 pyzmq-22.0.3 tabulate-0.8.9 tensorpack-0.11
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting lmdb
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/2f/df/3aea5279753cb8ab0c96dec43106e24f388d4179d5224f6d3e652016c095/lmdb-1.2.1.tar.gz (881kB)
+    ERROR: Command errored out with exit status 1:
+     command: /usr/local/ma/python3.7/bin/python3.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-kj31qin8/lmdb/setup.py'"'"'; __file__='"'"'/tmp/pip-install-kj31qin8/lmdb/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base pip-egg-info
+         cwd: /tmp/pip-install-kj31qin8/lmdb/
+    Complete output (7 lines):
+    py-lmdb: Using bundled liblmdb with py-lmdb patches; override with LMDB_FORCE_SYSTEM=1 or LMDB_PURE=1.
+    sh: /usr/bin/patch: No such file or directory
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-kj31qin8/lmdb/setup.py", line 119, in <module>
+        raise Exception('Applying patch failed')
+    Exception: Applying patch failed
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+WARNING:tensorflow:From /usr/local/Ascend/tfplugin/latest/tfplugin/python/site-packages/npu_bridge/estimator/npu/npu_optimizer.py:225: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+train.lmdb
+WARNING:tensorflow:From /cache/user-job-dir/code/models/pcn_cd.py:45: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /cache/user-job-dir/code/models/pcn_cd.py:45: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /cache/user-job-dir/code/models/pcn_cd.py:45: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /cache/user-job-dir/code/models/pcn_cd.py:45: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+Traceback (most recent call last):
+  File "/home/work/user-job-dir/code/train.py", line 185, in <module>
+    train(args)
+  File "/home/work/user-job-dir/code/train.py", line 76, in train
+    args.lmdb_train, args.batch_size, args.num_input_points, args.num_gt_points, is_training=True)
+  File "/cache/user-job-dir/code/data_util.py", line 95, in lmdb_dataflow
+    df = dataflow.LMDBSerializer.load(lmdb_path, shuffle=False)
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/tensorpack/utils/develop.py", line 38, in __getattr__
+    raise AttributeError("Cannot import '{}', therefore '{}' is not available".format(dependency, klass))
+AttributeError: Cannot import 'lmdb', therefore 'LMDBSerializer' is not available
+[Modelarts Service Log]2021-07-14 21:56:56,620 - ERROR - proc-rank-0-device-0 (pid: 115) has exited with non-zero code: 1
+[Modelarts Service Log]2021-07-14 21:56:56,620 - INFO - Begin destroy training processes
+[Modelarts Service Log]2021-07-14 21:56:56,620 - INFO - proc-rank-0-device-0 (pid: 115) has exited
+[Modelarts Service Log]2021-07-14 21:56:56,620 - INFO - End destroy training processes
+[ModelArts Service Log]modelarts-pipe: total length: 10487
+[Modelarts Service Log]Training end with return code: 1
+[Modelarts Service Log]upload ascend-log to s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/ at 2021-07-14-21:56:56
+upload_tail_log.py -l 2048 -o s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/log/ascend-log/
+[Modelarts Service Log]Training completed.

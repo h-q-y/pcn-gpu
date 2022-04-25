@@ -1,0 +1,14 @@
+{
+    "KBHit":false,
+    "binFileName":"te_reducesumd_0d11dfcdec17677a3d0cb73565d921988e9803101b24da1c045f5b2ee331754e_1",
+    "binFileSuffix":".o",
+    "blockDim":33,
+    "kernelName":"te_reducesumd_0d11dfcdec17677a3d0cb73565d921988e9803101b24da1c045f5b2ee331754e_1__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        1
+    ],
+    "sha256":"b9b6d07b605bfd8c152631a386ede3f1bec6ab07e12d76c0056b539eac0f5b28"
+}

@@ -1,0 +1,14 @@
+{
+    "binFileName":"te_fused_op_bias_add_relu_a77c2deb14f6cc43_6cbef530956b305e_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_fused_op_bias_add_relu_a77c2deb14f6cc43_6cbef530956b305e_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0
+    ],
+    "sha256":"5c3cdac444c3b472896684616f632aa001e18a3b67a3812ecea01bd1ce2a2e25"
+}

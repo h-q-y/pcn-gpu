@@ -1,0 +1,119 @@
+do nothing
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+[Modelarts Service Log]pwd: /home/work
+[Modelarts Service Log]app_url: s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/
+[Modelarts Service Log]boot_file: code/train.py
+[Modelarts Service Log]log_url: /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]command: code/train.py --data_url=s3://pcn/pcn_dataset/pcn/ --train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0032/
+[Modelarts Service Log]local_code_dir: 
+[Modelarts Service Log]Training start at 2021-07-14-23:07:44
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[Modelarts Service Log]handle inputs of training job
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log][INFO][2021/07/14 23:07:44]: env MA_INPUTS is not found, skip the inputs handler
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[ModelArts Service Log]2021-07-14 23:07:45,447 - modelarts-downloader.py[line:620] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/code/', trace=False, type='common', verbose=False)
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+[ModelArts Service Log]modelarts-pipe: total length: 24
+/home/work/user-job-dir
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/MA-pcn_npu_20210610173506-06-17-15-30.log
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+INFO:root:Using MoXing-v1.17.3-8aa951bc
+INFO:root:Using OBS-Python-SDK-3.20.7
+[Modelarts Service Log]2021-07-14 23:07:46,858 - WARNING - stdout log /var/log/batch-task/job25b6820f/job-ma-pcn-npu-202106101/stdout.log is not found
+[Modelarts Service Log]2021-07-14 23:07:46,866 - INFO - Ascend Driver: Version=20.2.0
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - Davinci training command
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/code/train.py', '--data_url=s3://pcn/pcn_dataset/pcn/', '--train_url=s3://pcn/MA-pcn_npu_20210610173506-06-17-15-30/output/V0032/']
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - Wait for Rank table file ready
+[Modelarts Service Log]2021-07-14 23:07:46,867 - INFO - Rank table file (K8S generated) is ready for read
+[Modelarts Service Log]2021-07-14 23:07:46,868 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "job-ma-pcn-npu-202106101",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "job25b6820f-job-ma-pcn-npu-202106101-0",
+                    "server_id": "192.168.0.136",
+                    "devices": [
+                        {
+                            "device_id": "2",
+                            "device_ip": "192.3.5.67"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 23:07:46,868 - INFO - Rank table file (C7x)
+[Modelarts Service Log]2021-07-14 23:07:46,868 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.136",
+            "device": [
+                {
+                    "device_id": "2",
+                    "device_ip": "192.3.5.67",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 23:07:46,869 - INFO - Rank table file (C7x) is generated
+[Modelarts Service Log]2021-07-14 23:07:46,869 - INFO - Current server
+[Modelarts Service Log]2021-07-14 23:07:46,869 - INFO - 
+{
+    "server_id": "192.168.0.136",
+    "device": [
+        {
+            "device_id": "2",
+            "device_ip": "192.3.5.67",
+            "rank_id": "0"
+        }
+    ]
+}
+[Modelarts Service Log]2021-07-14 23:07:46,870 - INFO - bootstrap proc-rank-0-device-0
+[Modelarts Service Log]2021-07-14 23:07:46,877 - INFO - proc-rank-0-device-0 (pid: 115)
+Uninstalling enum34-1.1.10:
+  Successfully uninstalled enum34-1.1.10
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting lmdb
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/2f/df/3aea5279753cb8ab0c96dec43106e24f388d4179d5224f6d3e652016c095/lmdb-1.2.1.tar.gz (881kB)
+    ERROR: Command errored out with exit status 1:
+     command: /usr/local/ma/python3.7/bin/python3.7 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-gpzqjw4a/lmdb/setup.py'"'"'; __file__='"'"'/tmp/pip-install-gpzqjw4a/lmdb/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base pip-egg-info
+         cwd: /tmp/pip-install-gpzqjw4a/lmdb/
+    Complete output (7 lines):
+    py-lmdb: Using bundled liblmdb with py-lmdb patches; override with LMDB_FORCE_SYSTEM=1 or LMDB_PURE=1.
+    sh: /usr/bin/patch: No such file or directory
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-gpzqjw4a/lmdb/setup.py", line 119, in <module>
+        raise Exception('Applying patch failed')
+    Exception: Applying patch failed
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple
+Collecting pyarrow==0.10.0
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/c0/a0/f7e9dfd8988d94f4952f9b50eb04e14a80fbe39218520725aab53daab57c/pyarrow-0.10.0.tar.gz (2.1MB)

@@ -1,0 +1,15 @@
+{
+    "binFileName":"te_fused_op_real_div_sqrt_grad_735aaf9157736524_190ce30533abc34b_0",
+    "binFileSuffix":".o",
+    "blockDim":32,
+    "kernelName":"te_fused_op_real_div_sqrt_grad_735aaf9157736524_190ce30533abc34b_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0,
+        0,
+        0
+    ],
+    "sha256":"c2343fca3e027de95ea2bf7122c2ceaefd160c54d06c9d638492607b366dca84"
+}

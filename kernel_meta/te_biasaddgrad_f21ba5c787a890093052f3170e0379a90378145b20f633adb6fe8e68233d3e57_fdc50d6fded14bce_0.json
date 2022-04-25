@@ -1,0 +1,13 @@
+{
+    "binFileName":"te_biasaddgrad_f21ba5c787a890093052f3170e0379a90378145b20f633adb6fe8e68233d3e57_fdc50d6fded14bce_0",
+    "binFileSuffix":".o",
+    "blockDim":16,
+    "kernelName":"te_biasaddgrad_f21ba5c787a890093052f3170e0379a90378145b20f633adb6fe8e68233d3e57_fdc50d6fded14bce_0__kernel0",
+    "magic":"RT_DEV_BINARY_MAGIC_ELF",
+    "opParaSize":0,
+    "parameters":[
+        0,
+        0
+    ],
+    "sha256":"0c302cf5358f91d983436f6254d8e2658e57315f16ade7492ad8b23aea767bb2"
+}
